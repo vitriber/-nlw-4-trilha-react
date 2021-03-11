@@ -11,10 +11,10 @@ interface Challenge {
 }
 
 interface ChallengesContextData {
-    level: number, 
-    currentExperience: number, 
-    challengesCompleted: number, 
-    experienceToNexLevel: number, 
+    level: number,
+    currentExperience: number,
+    challengesCompleted: number,
+    experienceToNexLevel: number,
     activeChallenge: Challenge,
     levelUp: () => void,
     startNewChallenge: () => void,
@@ -29,12 +29,12 @@ interface ChallengesProviderProps {
     currentExperience: number,
     challengesCompleted: number,
 }
-  
+
 
 export const ChallengesContext = createContext({} as ChallengesContextData);
 
 export function ChallengesProvider({
-    children, 
+    children,
     ...rest
 }: ChallengesProviderProps) {
     const [level, setLevel] = useState(rest.level ?? 1);
@@ -75,7 +75,7 @@ export function ChallengesProvider({
 
         if(Notification.permission === 'granted'){
             new Notification('Novo desafio 🔔', {
-                body: `Valendo ${challenge.amount}xp!` 
+                body: `Valendo ${challenge.amount}xp!`
             })
         }
     }
@@ -105,11 +105,11 @@ export function ChallengesProvider({
 
 
     return(
-        <ChallengesContext.Provider 
+        <ChallengesContext.Provider
             value={{
-                level, 
-                currentExperience, 
-                challengesCompleted, 
+                level,
+                currentExperience,
+                challengesCompleted,
                 levelUp,
                 startNewChallenge,
                 resetChallenge,

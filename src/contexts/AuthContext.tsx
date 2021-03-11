@@ -35,7 +35,7 @@ export function AuthProvider({
   return (
     <Provider session={pageProps}>
       <AuthContext.Provider value={{ signIn, signOut }}>
-        {children}
+         {children}
       </AuthContext.Provider>
     </Provider>
   )
