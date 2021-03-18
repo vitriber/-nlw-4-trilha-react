@@ -55,7 +55,7 @@ yarn dev or npm run dev
 ## [Layout](https://www.figma.com/file/KNXg7ZZO8VY59RZwZqC0n5/Move.it-2.0-(Copy)?node-id=149721%3A851)
 
 <br />
-
+<br />
 # Author 📚
 
 Made by [Vitor Ribeiro](https://github.com/vitriber)
