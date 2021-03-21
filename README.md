@@ -56,7 +56,7 @@ yarn dev or npm run dev
 
 <br />
 <br />
-# Author 📚
+## Author 📚
 
 Made by [Vitor Ribeiro](https://github.com/vitriber)
 
